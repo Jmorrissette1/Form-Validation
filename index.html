@@ -10,25 +10,28 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Log In Form</title>
+    <script defer src="app.js"></script>
 </head>
 
 <body>
+
     <div class="full-screen-container">
         <div class="login-container">
             <h3 class="login-title">Welcome</h3>
 
-            <form>
+            <form action="/" method="GET" id="form">
                 <div class="input-group">
                     <label>Email</label>
-                    <input type="email">
+                    <input id="email" name="email" type="email">
                 </div>
                 <div class="input-group">
                     <label>Password</label>
-                    <input type="password">
+                    <input id="password" name="password" type="password">
                 </div>
                 <button type="submit" class="login-button">
                     Sign In
                 </button>
+                <div id="error" class="error-msg"></div>
             </form>
         </div>
 

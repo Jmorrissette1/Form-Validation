@@ -85,6 +85,12 @@ body {
 .login-button:focus {
   background-color: hsl(276, 100%, 69%, 0.6);
 }
+.error-msg {
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   .login-container {
